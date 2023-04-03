@@ -19,9 +19,10 @@ public class AmazonTest {
         driver.quit();
     }
 
+
     @Test
-    public void testAmazon() {
-        driver.get("https://www.amazon.fr");
+    public void testGoogle() {
+        driver.get("https://www.google.com");
     }
 }
 
