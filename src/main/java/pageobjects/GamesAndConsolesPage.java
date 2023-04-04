@@ -12,7 +12,5 @@ public class GamesAndConsolesPage {
     By gamesAndConsoleButton =  By.cssSelector("ul.hmenu.hmenu-visible.hmenu-translateX > li a[class='hmenu-item']");
 
 
-    WebElement proposalItem = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[data-cel-widget='handsfree-browse_OctopusBestSellerAsin'] span.a-list-item"))); // [data-cel-widget='handsfree-browse_OctopusBestSellerAsin'] > div div ul li span.a-list-item
-    String firstItemActual = proposalItem.getText();
 
 }

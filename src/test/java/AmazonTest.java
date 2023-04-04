@@ -25,6 +25,6 @@ public class AmazonTest {
     public void testAmazon() {
         String keyword = "iPhone 13";
         HomePage homePage = new HomePage(driver);
-        homePage.search(keyword);
+        homePage.searchAmazon(keyword);
     }
 }
