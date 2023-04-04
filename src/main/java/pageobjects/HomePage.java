@@ -18,14 +18,15 @@ public void  cookieButtonPopUp(WebElement cookieButton)
     cookieButton.click();
       }
 
-      // insert search keyword on the search bar then click on the loop
- public  void searchAmazon(String keyword,WebElement searchButton)
+      // insert search keyword on the search bar then click on the loop(pour le test iphone)
+ public  void searchAmazon(String keyword)
        {
      driver.findElement(By.cssSelector("input#twotabsearchtextbox")).sendKeys( keyword);
-     searchButton = driver.findElement(new By.ByCssSelector("input#nav-search-submit-button"));
+     WebElement searchButton = driver.findElement(new By.ByCssSelector("input#nav-search-submit-button"));
      searchButton.click();
-
                }
+///-goToGamesAndConsolesPage(): Click Toutes, Click Jeux video et consoles, Click tous
+
 
 }
 
