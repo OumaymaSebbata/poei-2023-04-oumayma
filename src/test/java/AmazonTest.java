@@ -16,15 +16,18 @@ public class AmazonTest {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod
+    /*@AfterMethod
     public void teardown() {
         driver.quit();
-    }
+    }*/
 
     @Test
-    public void testAmazon() {
+    public void testAmazon1() {
         String keyword = "iPhone 13";
         HomePage homePage = new HomePage(driver);
-        homePage.searchAmazon(keyword);
+        homePage.cookieButtonPopUp();
+        //homePage.searchAmazon(keyword);
+        homePage.gotoGamesandconsolesPage();
+
     }
 }
