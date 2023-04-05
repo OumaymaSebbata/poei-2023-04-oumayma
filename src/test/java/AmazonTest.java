@@ -28,7 +28,7 @@ public class AmazonTest {
         HomePage homePage = new HomePage(driver);
         homePage.cookieButtonPopUp();
         //homePage.searchAmazon(keyword);
-        homePage.gotoGamesandconsolesPage();
+        ///homePage.gotoGamesandconsolesPage();
         GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage(driver);
         gamesAndConsolesPage.OpenBestSeller(1);
 
