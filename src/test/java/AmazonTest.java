@@ -24,13 +24,13 @@ public class AmazonTest {
 
     @Test
     public void testAmazon1() {
-        String keyword = "iPhone 13";
+        ///String keyword = "iPhone 13";
         HomePage homePage = new HomePage(driver);
         homePage.cookieButtonPopUp();
         //homePage.searchAmazon(keyword);
         homePage.gotoGamesandconsolesPage();
         GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage();
-       ///gamesAndConsolesPage.OpenBestSeller(1);
+        gamesAndConsolesPage.OpenBestSeller(1);
 
     }
 }
