@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.time.Instant;
 
 public class HomePage {
    WebDriver driver;
@@ -34,7 +35,7 @@ public void  cookieButtonPopUp()
      searchButton.click();
                }*/
 ///-goToGamesAndConsolesPage(): Click Toutes, Click Jeux video et consoles, Click tous
-     public void gotoGamesandconsolesPage()
+     /*public void gotoGamesandconsolesPage()
      {
          int timeOut1 = 10;
          int timeOut2 = 10;
@@ -47,17 +48,17 @@ public void  cookieButtonPopUp()
          //Select Tous les jeux video
          WebDriverWait wait2  = new WebDriverWait(driver, Duration.ofSeconds(timeOut2));///juste declaration
          WebElement SelectTouslesJeux = wait2.until(ExpectedConditions.elementToBeClickable(By.cssSelector("ul.hmenu.hmenu-visible.hmenu-translateX > li a[class='hmenu-item']")));
-         SelectTouslesJeux.click();
+         SelectTouslesJeux.click();}*/
 
-         public void createNewAccount() {
+        public void createNewAccount() {
          Actions actions = new Actions(driver);
 
          WebElement buttonAccount = driver.findElement(listAndAccountButtonBy);
          actions.moveToElement(buttonAccount);
          actions.perform();
 
-         ///WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-         wait.until(ExpectedConditions.elementToBeClickable(signInButtonBy)).click();
+         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+          wait.until(ExpectedConditions.elementToBeClickable(signInButtonBy)).click();
      }
          /////////////
 
@@ -69,6 +70,6 @@ public void  cookieButtonPopUp()
 
 
 
-}
+
 
 
