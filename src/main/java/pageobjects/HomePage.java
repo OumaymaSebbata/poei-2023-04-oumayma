@@ -32,7 +32,7 @@ public void  cookieButtonPopUp()
 ///-goToGamesAndConsolesPage(): Click Toutes, Click Jeux video et consoles, Click tous
      public void gotoGamesandconsolesPage()
      {
-         int timeOut1 = 5;
+         int timeOut1 = 10;
          int timeOut2 = 10;
          WebElement toutesButton = driver.findElement(By.cssSelector(".hm-icon.nav-sprite"));
          toutesButton.click();

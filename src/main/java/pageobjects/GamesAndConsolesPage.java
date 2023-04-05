@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class GamesAndConsolesPage {
-    public void LoginPage(WebDriver driver) {
+    public GamesAndConsolesPage(WebDriver driver) {
         this.driver = driver;
     }
 

@@ -29,8 +29,8 @@ public class AmazonTest {
         homePage.cookieButtonPopUp();
         //homePage.searchAmazon(keyword);
         homePage.gotoGamesandconsolesPage();
-        GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage();
-       /// gamesAndConsolesPage.OpenBestSeller(1);
+        GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage(driver);
+        gamesAndConsolesPage.OpenBestSeller(1);
 
     }
 }
