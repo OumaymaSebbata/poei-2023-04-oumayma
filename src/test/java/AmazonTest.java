@@ -3,6 +3,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import pageobjects.GamesAndConsolesPage;
 import pageobjects.HomePage;
 
 public class AmazonTest {
@@ -28,6 +29,8 @@ public class AmazonTest {
         homePage.cookieButtonPopUp();
         //homePage.searchAmazon(keyword);
         homePage.gotoGamesandconsolesPage();
+        GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage();
+       ///gamesAndConsolesPage.OpenBestSeller(1);
 
     }
 }

@@ -44,6 +44,12 @@ public void  cookieButtonPopUp()
          WebDriverWait wait2  = new WebDriverWait(driver, Duration.ofSeconds(timeOut2));///juste declaration
          WebElement SelectTouslesJeux = wait2.until(ExpectedConditions.elementToBeClickable(By.cssSelector("ul.hmenu.hmenu-visible.hmenu-translateX > li a[class='hmenu-item']")));
          SelectTouslesJeux.click();
+         /////////////
+
+         /*WebElement bestSeller= wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[data-cel-widget='handsfree-browse_OctopusBestSellerAsin'] span.a-list-item")));
+
+         bestSeller.click(); // Open the first article*/
+
      }
 
 
