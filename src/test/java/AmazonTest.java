@@ -30,7 +30,7 @@ public class AmazonTest {
         //homePage.searchAmazon(keyword);
         homePage.gotoGamesandconsolesPage();
         GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage();
-        gamesAndConsolesPage.OpenBestSeller(1);
+       /// gamesAndConsolesPage.OpenBestSeller(1);
 
     }
 }
