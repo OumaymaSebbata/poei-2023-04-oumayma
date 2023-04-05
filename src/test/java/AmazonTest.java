@@ -27,10 +27,11 @@ public class AmazonTest {
         ///String keyword = "iPhone 13";
         HomePage homePage = new HomePage(driver);
         homePage.cookieButtonPopUp();
+        homePage.createNewAccount();
         //homePage.searchAmazon(keyword);
         ///homePage.gotoGamesandconsolesPage();
-        GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage(driver);
-        gamesAndConsolesPage.OpenBestSeller(1);
+        //GamesAndConsolesPage gamesAndConsolesPage = new GamesAndConsolesPage(driver);
+        //gamesAndConsolesPage.OpenBestSeller(1);
 
     }
 }
