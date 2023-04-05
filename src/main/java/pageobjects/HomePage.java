@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,6 +17,9 @@ public class HomePage {
     }
 
     //closeCookiePopup()
+    By listAndAccountButtonBy = By.cssSelector("#nav-link-accountList");
+
+    By signInButtonBy = By.cssSelector(".nav-action-button");
 public void  cookieButtonPopUp()
       {
     WebElement cookieButton = driver.findElement(By.cssSelector("input#sp-cc-accept"));
@@ -44,6 +48,17 @@ public void  cookieButtonPopUp()
          WebDriverWait wait2  = new WebDriverWait(driver, Duration.ofSeconds(timeOut2));///juste declaration
          WebElement SelectTouslesJeux = wait2.until(ExpectedConditions.elementToBeClickable(By.cssSelector("ul.hmenu.hmenu-visible.hmenu-translateX > li a[class='hmenu-item']")));
          SelectTouslesJeux.click();
+
+         public void createNewAccount() {
+         Actions actions = new Actions(driver);
+
+         WebElement buttonAccount = driver.findElement(listAndAccountButtonBy);
+         actions.moveToElement(buttonAccount);
+         actions.perform();
+
+         ///WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+         wait.until(ExpectedConditions.elementToBeClickable(signInButtonBy)).click();
+     }
          /////////////
 
          /*WebElement bestSeller= wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[data-cel-widget='handsfree-browse_OctopusBestSellerAsin'] span.a-list-item")));
